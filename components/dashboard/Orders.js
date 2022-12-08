@@ -1,11 +1,13 @@
 import * as React from 'react';
-import Link from '@mui/material/Link';
+import Links from '@mui/material/Link';
+import Link from 'next/link'
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Title from './Title';
+
 
 // Generate Order Data
 function createData(codigo, fecha, metodoPago, total) {
@@ -69,9 +71,9 @@ export default function Orders() {
           ))}
         </TableBody>
       </Table>
-      <Link color="primary" href="#" onClick={preventDefault} sx={{ mt: 3 }}>
-        Todas las ventas
-      </Link>
+      <Links color="primary" href="/test"  sx={{ mt: 3 }}>
+            prueba
+      </Links>
     </React.Fragment>
   );
 }

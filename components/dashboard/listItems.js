@@ -14,11 +14,12 @@ import PaymentIcon from '@mui/icons-material/Payment';
 
 export const mainListItems = (
   <React.Fragment>
-    <ListItemButton>
-      <ListItemIcon>
-        <HomeIcon />
+    <ListItemButton href='/'>
+      <ListItemIcon >
+        <HomeIcon/>
       </ListItemIcon>
       <ListItemText primary="Inicio" />
+      
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
